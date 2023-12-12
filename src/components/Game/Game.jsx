@@ -16,6 +16,7 @@ const Game = ({ addScore, addAttempts, reset, setRestart, solved }) => {
 
 	useEffect(() => {
 		console.log(cards);
+		// eslint-disable-next-line
 	}, []);
 
 	useEffect(() => {
@@ -24,6 +25,7 @@ const Game = ({ addScore, addAttempts, reset, setRestart, solved }) => {
 			setCards(generateCards());
 			setRestart();
 		}
+		// eslint-disable-next-line
 	}, [reset]);
 
 	useEffect(() => {
@@ -45,6 +47,7 @@ const Game = ({ addScore, addAttempts, reset, setRestart, solved }) => {
 				if (countMatchedCards(cards) === cards.length) solved();
 			}, 2000);
 		}
+		// eslint-disable-next-line
 	}, [selectedCards, cards]);
 
 	const handleCardClick = card => {
