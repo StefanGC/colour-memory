@@ -42,7 +42,7 @@ const Game = ({ addScore, addAttempts, reset, setRestart, solved }) => {
 				card2.isFlipped = false;
 				setSelectedCards([]);
 				setCards([...cards]);
-				countMatchedCards(cards) === cards.length ? solved() : null;
+				if (countMatchedCards(cards) === cards.length) solved();
 			}, 2000);
 		}
 	}, [selectedCards, cards]);
