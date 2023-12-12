@@ -1,0 +1,35 @@
+.stats-container {
+	background-color: #f0f0f0;
+	padding: 20px;
+	border-radius: 5px;
+	width: 250px;
+	text-align: center;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.stats-container div {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.stats-container button {
+	background-color: #008cba;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.stats-container button:hover {
+	background-color: #005f7f;
+}
+
+.statistics {
+	text-align: center;
+}
+
+.element {
+	margin: 20px 0px;
+}

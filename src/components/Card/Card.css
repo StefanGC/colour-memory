@@ -1,0 +1,35 @@
+.card {
+	width: 100px;
+	height: 130px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	font-size: 24px;
+	background-size: contain;
+	background-repeat: round;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.card.matched {
+	background-image: none;
+	background-color: transparent;
+	transform: rotateY(180deg);
+	transition: transform 0.5s;
+}
+
+.card.matched.flipped {
+	border: 3px solid #4caf50;
+	background-image: none;
+	background-color: #4caf50;
+	transform: scale(1.2);
+	transition: transform 0.5s;
+}
+
+.card.flipped {
+	background-image: none;
+	background-color: grey;
+	transform: rotateY(180deg);
+	transition: transform 0.5s;
+}
