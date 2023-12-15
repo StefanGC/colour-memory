@@ -49,7 +49,7 @@ const Game = ({ addScore, addAttempts, reset, setRestart, solved }) => {
 		}
 		// eslint-disable-next-line
 	}, [selectedCards, cards]);
-
+z
 	const handleCardClick = card => {
 		if (!card.isMatched && !card.isFlipped && selectedCards.length < 2) {
 			card.isFlipped = true;
